@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Membership Sign Up">
+    <title>Membership Sign Up</title>
+    <link rel="stylesheet" href="Membership.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="membership.html">Membership</a>
+            <a href="contact.html">Contact</a>
+            <img class="img" src="https://img.freepik.com/premium-vector/fitness-center-logo_25327-170.jpg" alt="">
+
+        </nav>
+    </header>
+
+    <section id="membership">
+        <div class="container">
+            <h2>Membership Sign Up</h2>
+            <p>Fill in the form below to sign up for our membership:</p>
+            <form action="process_signup.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="membership-type">Membership Type:</label>
+                <select id="membership-type" name="membership-type">
+                    <option value="monthly">Monthly Membership</option>
+                    <option value="annual">Annual Membership</option>
+                    <option value="family">Family Membership</option>
+                    <option value="student">Student Membership</option>
+                </select>
+
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+  
+    <footer>
+        <p>&copy; 2023 Fitness Center</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </footer>
+</body>
+
+</html>
